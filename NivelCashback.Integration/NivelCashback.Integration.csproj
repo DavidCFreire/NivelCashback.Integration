@@ -12,7 +12,7 @@
     <PackageProjectUrl>https://github.com/DavidCFreire/NivelCashback.Integration</PackageProjectUrl>
     <RepositoryUrl>https://github.com/DavidCFreire/NivelCashback.Integration</RepositoryUrl>
     <PackageId>NivelCashback.Integration</PackageId>
-    <PackageIcon>logo_nivel#2.png</PackageIcon>
+    <PackageIcon>logo_nivel#3.png</PackageIcon>
     <PackageIconUrl />
   </PropertyGroup>
 
@@ -23,7 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="..\Icons\logo_nivel#2.png">
+    <None Include="..\Icons\logo_nivel#3.png">
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>
