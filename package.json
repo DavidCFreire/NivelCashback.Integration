@@ -1,0 +1,19 @@
+> npm init --yes
+Wrote to /home/monatheoctocat/my_package/package.json:
+
+{
+  "name": "NivelCashback.Integration",
+  "description": "Facilita a integração com a API da Nivel Cashback",
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DavidCFreire/NivelCashback.Integration"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DavidCFreire/NivelCashback.Integration/issues"
+  },
+  "homepage": "https://github.com/DavidCFreire/NivelCashback.Integration"
+}
