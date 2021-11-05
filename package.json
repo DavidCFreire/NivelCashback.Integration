@@ -1,6 +1,3 @@
-> npm init --yes
-Wrote to /home/monatheoctocat/my_package/package.json:
-
 {
   "name": "NivelCashback.Integration",
   "description": "Facilita a integração com a API da Nivel Cashback",
