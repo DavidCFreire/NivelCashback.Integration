@@ -2,7 +2,8 @@ name: Deploy to Nuget
 
 on:
   push:
-    branches: [ master ]
+    tags:
+    - 'v*'
     
 env:
   PACKAGE_OUTPUT_DIRECTORY: ${{ github.workspace }}/output
@@ -28,7 +29,7 @@ jobs:
       id: version
       uses: battila7/get-version-action@v2
     - name: Create NuGet Package
-      run: dotnet pack -c Release --include-symbols -p:PackageVersion=${{ github.event.head_commit.message-whitout-v }}
+      run: dotnet pack -c Release --include-symbols -p:PackageVersion=${{ steps.version.outputs.version-whitout-v }}
       working-directory: ./NivelCashback.Integration
     - name: Push package
       run: dotnet nuget push ./NivelCashback.Integration/bin/Release/*.nupkg -k ${{ secrets.nuget_api_key }} -s 'https://api.nuget.org/v3/index.json' 
