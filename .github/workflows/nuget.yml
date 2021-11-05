@@ -27,5 +27,5 @@ jobs:
       run: dotnet pack -c Release --include-symbols
       working-directory: ./NivelCashback.Integration
     - name: Push package
-      run: dotnet nuget push ${{ env.PACKAGE_OUTPUT_DIRECTORY }}\*.nupkg -k ${{ secrets.nuget_api_key }} -s 'https://api.nuget.org/v3/index.json' 
+      run: dotnet nuget push ./*.nupkg -k ${{ secrets.nuget_api_key }} -s 'https://api.nuget.org/v3/index.json' 
      
