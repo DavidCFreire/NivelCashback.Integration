@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NivelCashback_Integration.Models
+namespace NivelCashback.Integration.Models
 {
     public class BonificacaoResponse
     {

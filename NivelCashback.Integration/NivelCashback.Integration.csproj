@@ -3,21 +3,30 @@
   <PropertyGroup>
     <TargetFrameworks>net472;net45</TargetFrameworks>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <AssemblyVersion>1.0.1.0</AssemblyVersion>
-    <FileVersion>1.0.1.0</FileVersion>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <FileVersion>1.0.0.0</FileVersion>
     <Authors>David Freire</Authors>
     <Product>NivelCashback Integration</Product>
-    <Version>1.0.1</Version>
+    <Version>1.0.0</Version>
     <NeutralLanguage>pt-BR</NeutralLanguage>
-    <PackageProjectUrl>https://github.com/DavidCFreire/NivelCashback_Integration</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/DavidCFreire/NivelCashback_Integration</RepositoryUrl>
-    <PackageId>NivelCashback_Integration</PackageId>
+    <PackageProjectUrl>https://github.com/DavidCFreire/NivelCashback.Integration</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/DavidCFreire/NivelCashback.Integration</RepositoryUrl>
+    <PackageId>NivelCashback.Integration</PackageId>
+    <PackageIcon>logo_nivel.png</PackageIcon>
+    <PackageIconUrl />
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
     <PackageReference Include="System.Net.Http" Version="4.3.4" />
     <PackageReference Include="System.Net.Http.Formatting.Extension" Version="5.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\Icons\logo_nivel.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 

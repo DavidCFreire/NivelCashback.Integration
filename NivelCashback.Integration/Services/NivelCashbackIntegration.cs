@@ -1,9 +1,9 @@
 ﻿using Newtonsoft.Json;
-using NivelCashback_Integration.Models;
+using NivelCashback.Integration.Models;
 using System.Net.Http;
 using System.Threading.Tasks;
 
-namespace NivelCashback_Integration.Services
+namespace NivelCashback.Integration.Services
 {
     public static class NivelCashbackIntegration
     {

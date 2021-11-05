@@ -4,11 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NivelCashback_Integration.Models
+namespace NivelCashback.Integration.Models
 {
-    public enum AmbienteTypes
+    public class StatusResquest
     {
-        Homologacao,
-        Producao
+        public string token { get; set; }
     }
 }
