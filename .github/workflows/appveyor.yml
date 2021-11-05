@@ -1,0 +1,25 @@
+# sets the environment variables for GITHUB_TOKEN and NUGET_TOKEN
+# needed by semantic-version
+
+# NOTE: DO NOT USE YOUR REAL TOKENS
+# use the secure variables feature of appveyor to encrypt them. The encryption is linked to your account so these are safe to check-in to source(https://www.appveyor.com/docs/build-configuration/#secure-variables) 
+environment:
+  GITHUB_TOKEN:
+    secure: {{ secrets.GIT_TOKEN }}
+  NUGET_TOKEN:
+    secure: {{ secrets.NUGET_API_KEY }}
+
+# semantic-version requires node > 8.3 so instruct appveyor to install node 9
+install:
+  - ps: Install-Product node 9
+
+# run out script
+build_script:
+  - ps: .\build.ps1
+
+test: off
+
+skip_tags: true
+
+cache:
+- tools -> build.cake
