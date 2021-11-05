@@ -11,7 +11,7 @@ namespace NivelCashback_Integration.Models
         public string token { get; set; }
         public string CPF { get; set; }
         public string Email { get; set; }
-        public decimal Valor { get; set; }
+        public string Valor { get; set; }
         public string CodControle { get; set; }
         public bool CadastrarSemEmail { get; set; }
         public bool Pagamento { get; set; }

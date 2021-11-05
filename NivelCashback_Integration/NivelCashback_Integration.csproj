@@ -11,6 +11,7 @@
     <NeutralLanguage>pt-BR</NeutralLanguage>
     <PackageProjectUrl>https://github.com/DavidCFreire/NivelCashback_Integration</PackageProjectUrl>
     <RepositoryUrl>https://github.com/DavidCFreire/NivelCashback_Integration</RepositoryUrl>
+    <PackageId>NivelCashback_Integration</PackageId>
   </PropertyGroup>
 
   <ItemGroup>
