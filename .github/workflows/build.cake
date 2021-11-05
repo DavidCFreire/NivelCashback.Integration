@@ -12,8 +12,8 @@ var configuration = Argument<string>("configuration", "Release");
 // GLOBAL VARIABLES
 ///////////////////////////////////////////////////////////////////////////////
 
-var projectName = "Cake.Npx";
-var releaseVersion = "0.0.0";
+var projectName = "NivelCashback.Integration";
+var releaseVersion = "1.1.1";
 var artifactsDir =  Directory("./artifacts");
 
 var isLocalBuild = BuildSystem.IsLocalBuild;
