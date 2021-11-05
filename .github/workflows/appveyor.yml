@@ -1,3 +1,9 @@
+
+
+on: 
+  push:
+    branches : [ master ]
+    
 # sets the environment variables for GITHUB_TOKEN and NUGET_TOKEN
 # needed by semantic-version
 
