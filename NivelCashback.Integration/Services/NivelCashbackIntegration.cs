@@ -19,7 +19,7 @@ namespace NivelCashback.Integration.Services
                     url = "https://homologacaoapi.nivel.com.br/";
                     break;
                 default:
-                    url = "https://api.nivel.com.br/";
+                    url = "https://api.nivel.com.br/" ;
                     break;
             }
             return url;
