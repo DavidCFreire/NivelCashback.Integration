@@ -4,7 +4,7 @@ on:
   push:
     branches: [ master ]
 env:
-  PACKAGE_OUTPUT_DIRECTORY: ${{ github.workspace }}\output
+  PACKAGE_OUTPUT_DIRECTORY: ${{ github.workspace }}/output
   
 jobs:
   build:
