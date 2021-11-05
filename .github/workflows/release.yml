@@ -22,13 +22,13 @@ jobs:
     - name: Test
       run: dotnet test --no-build --verbosity normal
     - name: Create NuGet Package
-      run: dotnet pack -c Release /p:Version=${{ github.event.release.tag_name }} /p:PackageReleaseNotes="Veja https://github.com/DavidCFreire/NivelCashback_Integration/releases/tag/${{ github.event.release.tag_name }}"
-      working-directory: ./NivelCashback_Integration
+      run: dotnet pack -c Release /p:Version=${{ github.event.release.tag_name }} /p:PackageReleaseNotes="Veja https://github.com/DavidCFreire/NivelCashback.Integration/releases/tag/${{ github.event.release.tag_name }}"
+      working-directory: ./NivelCashback.Integration
     - name: Archive NuGet Package
       uses: actions/upload-artifact@v1
       with:
         name: packages
-        path: ./NivelCashback_Integration/bin/Release/NivelCashback_Integration.${{ github.event.release.tag_name }}.nupkg
+        path: ./NivelCashback.Integration/bin/Release/NivelCashback.Integration.${{ github.event.release.tag_name }}.nupkg
     - name: Publish NuGet Package
-      run: dotnet nuget push ./NivelCashback_Integration/bin/Release/NivelCashback_Integration.${{ github.event.release.tag_name }}.nupkg --api-key ${{ secrets.nuget_api_key }} --source https://api.nuget.org/v3/index.json
+      run: dotnet nuget push ./NivelCashback.Integration/bin/Release/NivelCashback.Integration.${{ github.event.release.tag_name }}.nupkg --api-key ${{ secrets.nuget_api_key }} --source https://api.nuget.org/v3/index.json
         
